@@ -1,0 +1,48 @@
+Huthsady Legend Boun
+
+Requirements:
+  
+  Single integer member variable
+  
+  static array of string objects
+  
+  constructor that accepts a positive integer and uses it to initalize
+the numbers object. 
+
+  demonstrate the class by writing a main program that asks the user to
+enter a number in the proper range, then prints out its english description.
+
+
+
+First Thoughts:
+  
+    Well, 0-9 should be strings anyways. Ten, eleven, and twelve are the only tweens
+  that cause issue. 14-19 begin with the same prefix as their x10 counterparts. 
+  It might just be easier to do 0-9 for all four digits, than to code every case.
+  The hundreds and thousands can just be "zeroThroughNine << ' hundred'" or
+  "zeroThroughNine" << ' thousand'. So those cases should can be separate in logic.
+  Then it should check if the ten's place is a 0, 1, or greater than 1.
+  If 0 {print<<" and"}, if 1 it should grab the one's place and print it plus " teen".
+  Maybe i should go ahead and read both the ten's place and the one's place at the
+  same time. 
+
+  Instead of inserting the inputted integer into a vector or something I could just 
+  find the remainder of it per each place I want to check. 
+
+
+Steps:
+  
+  0.) At the top of the paper goes my name...with the date!
+  1.) Create the required class, and its members.
+  2.) Find a way to isolate the digits of an integer(with math)
+  3.) Make flowchart type logic for finding which string to output.
+  4.) Proper method for printing out verbalization of the integer.
+
+
+
+Notes:
+  
+  I know I did this the hard way. I think I wanted to challenge myself.
+  A definitely easier way would have been putting the ints in an array by 
+  their position (E.G. 1024 = ['1']['0']['2']['4']). I probably wouldve followed
+  a similar logic with printing the proper stuff out. 
